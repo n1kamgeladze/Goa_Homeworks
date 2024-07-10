@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კონტაქტი</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 1em;
+            background-color: white;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 0.5em;
+        }
+        input, textarea {
+            margin-bottom: 1em;
+            padding: 0.5em;
+            font-size: 1em;
+        }
+        button {
+            padding: 0.5em;
+            font-size: 1em;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>კონტაქტი</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">მთავარი</a></li>
+            <li><a href="about.html">ჩვენს შესახებ</a></li>
+            <li><a href="contact.html">კონტაქტი</a></li>
+        </ul>
+    </nav>
+    <section>
+        <form action="/submit_form" method="post">
+            <label for="email">ელ-ფოსტა:</label>
+            <input type="email" id="email" name="email" placeholder="შეიყვანეთ თქვენი ელ-ფოსტა" required>
+            
+            <label for="firstname">სახელი:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="შეიყვანეთ თქვენი სახელი" required>
+            
+            <label for="lastname">გვარი:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="შეიყვანეთ თქვენი გვარი" required>
+            
+            <label for="message">მესიჯი:</label>
+            <textarea id="message" name="message" placeholder="შეიყვანეთ თქვენი მესიჯი" required></textarea>
+            
+            <button type="submit">გაგზავნა</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Marvel სუპერგმირები</p>
+    </footer>
+</body>
+</html>
